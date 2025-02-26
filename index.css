@@ -1,0 +1,16 @@
+.taskbar {
+    display: flex;
+    gap: 100px;
+}
+.homebarbutton{
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+.homebarbutton:hover{
+    background-color: black;
+    color: white;
+}
