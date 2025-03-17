@@ -19,7 +19,7 @@ body{
     flex: 1;
     background: #1e1e1e;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     height: 700px;
     transition: 0.3s ease-in-out;
@@ -185,9 +185,6 @@ body{
     width: 30px;
     height: 30px;
 }
-.firstbox:hover{
-    transform: scale(1.1);
-}
 
 .daddydivformyforwards {
     display: flex;
@@ -206,10 +203,6 @@ body{
     max-width: 700px;
     transition: transform 0.3s ease-in-out;
 }
-.secondbox:hover{
-    transform: scale(1.1);
-}
-
 .about-title {
     font-size: 24px;
     font-weight: bold;
@@ -244,5 +237,37 @@ body{
     font-size: 14px;
     text-align: center;
     color: white;
+    transition: 0.3s ease-in-out;
+}
+.doing-box:hover{
+    transform: scale(1.07);
+}
+.taskbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.taskbar-link {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+.taskbar-link:hover {
+    color: #ffc107;
+}
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f5f5f5;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #ffc107;
+}
