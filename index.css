@@ -13,12 +13,26 @@ body{
     max-width: 1100px;
     margin: auto;
     padding: 20px;
-    gap: 50px;
+    gap: 10px;
 }
 .firstbox {
     flex: 1;
     background: #1e1e1e;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    height: 700px;
+    transition: 0.3s ease-in-out;
+}
+
+.firstbox {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+    background: #1e1e1e;
+    padding: 10px;
     border-radius: 20px;
     color: white;
     height: 700px;
@@ -29,7 +43,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 
 }
 .logodiv {
@@ -197,11 +212,12 @@ body{
 .secondbox {
     flex: 2;
     background: #1e1e1e;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     color: white;
-    max-width: 700px;
+    max-width:750px;
     transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
 }
 .about-title {
     font-size: 24px;
@@ -213,6 +229,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .doing-title {
@@ -225,6 +242,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    max-width: 500px;
 }
 .doing-container a{
     text-decoration: none;
@@ -238,6 +256,9 @@ body{
     text-align: center;
     color: white;
     transition: 0.3s ease-in-out;
+    display: flex;
+    flex: wrap;
+    max-width: 500px;
 }
 .doing-box:hover{
     transform: scale(1.07);
@@ -271,3 +292,74 @@ body{
 .theme-toggle:hover {
     color: #ffc107;
 }
+
+.whatimdoingbox{
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    transition: 0.5s ease-in;
+    transition: all;
+    background-color: #333;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.education-section {
+    max-width: 650px;
+    /* margin: auto; */
+    padding: 3px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.edu-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.timeline {
+    border-left: 3px solid #e7bd15;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.edu-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.edu-dot {
+    position: absolute;
+    left: -8px;
+    top: 30px;
+    width: 8px;
+    height: 8px;
+    background-color: #e7bd15;
+    border-radius: 50%;
+}
+
+.edu-content {
+    background: #222;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.edu-years {
+    font-weight: bold;
+    color: #e7bd15;
+}
+
+@media (max-width: 768px) {
+    .kingest {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstbox, .secondbox {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
